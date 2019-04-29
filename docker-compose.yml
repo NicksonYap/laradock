@@ -568,6 +568,8 @@ services:
 ### phpMyAdmin ###########################################
     phpmyadmin:
       build: ./phpmyadmin
+      volumes:
+        - ${PMA_CUSTOM_CONFIG}:/etc/phpmyadmin/config.user.inc.php
       environment:
         - PMA_ARBITRARY=1
         - MYSQL_USER=${PMA_USER}
