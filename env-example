@@ -217,7 +217,8 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=8.0
+#MYSQL_VERSION=8.0.18
+MYSQL_VERSION=5.7.28
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
