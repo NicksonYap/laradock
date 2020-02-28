@@ -315,7 +315,10 @@ MARIADB_VERSION=10.4.8
 MARIADB_DATABASE=default
 MARIADB_USER=default
 MARIADB_PASSWORD=secret
-MARIADB_PORT=3306
+# Exposes port outside of host
+#MARIADB_PORT=3306
+# Keeps port inside of host
+MARIADB_PORT=127.0.0.1:3306
 MARIADB_ROOT_PASSWORD=root
 MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
 
