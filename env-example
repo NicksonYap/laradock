@@ -870,4 +870,7 @@ ELK_VERSION=7.5.1
 
 ### GOTENBERG ################################################
 
-GOTENBERG_API_PORT=3000
+# Exposes port outside of host
+#GOTENBERG_API_PORT=3000
+# Keeps port inside of host
+GOTENBERG_API_PORT=127.0.0.1:3000
