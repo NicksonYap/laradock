@@ -310,7 +310,8 @@ MSSQL_PORT=1433
 
 ### MARIADB ###############################################
 
-MARIADB_VERSION=10.4.8
+MARIADB_VERSION=10.5.2
+# MARIADB_VERSION=10.4.8
 #MARIADB_VERSION=latest
 MARIADB_DATABASE=default
 MARIADB_USER=default
