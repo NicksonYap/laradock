@@ -1,10 +1,17 @@
-FROM percona:5.7
+ARG PERCONA_VERSION=5.7
+FROM percona:${PERCONA_VERSION}
 
 LABEL maintainer="DTUNES <diegotdai@gmai.com>"
 
-RUN chown -R mysql:root /var/lib/mysql/
+#####################################
+# Set Timezone
+#####################################
 
-COPY my.cnf /etc/mysql/conf.d/my.cnf
+ARG TZ=UTC
+ENV TZ ${TZ}
+# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && chown -R mysql:root /var/lib/mysql/
+
+COPY my.cnf /etc/my.cnf.d/my.cnf
 
 CMD ["mysqld"]
 
