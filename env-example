@@ -332,6 +332,10 @@ POSTGRES_PASSWORD=secret
 POSTGRES_PORT=5432
 POSTGRES_ENTRYPOINT_INITDB=./postgres/docker-entrypoint-initdb.d
 
+### POSTGRES-POSTGIS ##############################################
+
+POSTGRES_POSTGIS_VERSION=12-3.0-alpine
+
 ### RABBITMQ ##############################################
 
 RABBITMQ_NODE_HOST_PORT=5672
