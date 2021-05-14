@@ -272,7 +272,7 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 #MYSQL_VERSION=8.0.18
 MYSQL_VERSION=5.7.28
-MYSQL_DATABASE=default
+MYSQL_DATABASE=defaultdb
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
 # Exposes port outside of host
@@ -297,7 +297,7 @@ ZOOKEEPER_PORT=2181
 ### Percona ###############################################
 
 PERCONA_VERSION=ps-8.0.19-10
-PERCONA_DATABASE=default
+PERCONA_DATABASE=defaultdb
 PERCONA_USER=default
 PERCONA_PASSWORD=secret
 PERCONA_PORT=3306
@@ -315,7 +315,7 @@ MSSQL_PORT=1433
 MARIADB_VERSION=10.5.2
 # MARIADB_VERSION=10.4.8
 #MARIADB_VERSION=latest
-MARIADB_DATABASE=default
+MARIADB_DATABASE=defaultdb
 MARIADB_USER=default
 MARIADB_PASSWORD=secret
 # Exposes port outside of host
@@ -328,7 +328,7 @@ MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
 ### POSTGRES ##############################################
 
 POSTGRES_VERSION=alpine
-POSTGRES_DB=default
+POSTGRES_DB=defaultdb
 POSTGRES_USER=default
 POSTGRES_PASSWORD=secret
 POSTGRES_PORT=5432
